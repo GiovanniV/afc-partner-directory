@@ -1,0 +1,129 @@
+.afc-partner-profile-main {
+	margin: 0 auto;
+	max-width: 48rem;
+	padding: clamp(1.5rem, 4vw, 3rem) clamp(1rem, 4vw, 2rem);
+}
+
+.afc-partner-profile {
+	--afc-blue: #1596d4;
+	--afc-navy: #123b5d;
+	--afc-gray: #6b7280;
+	--afc-light: #f5f8fb;
+	--afc-border: #dde7ef;
+	--afc-white: #ffffff;
+
+	color: #111827;
+}
+
+.afc-partner-profile__back {
+	margin: 0 0 1.5rem;
+}
+
+.afc-partner-profile__back-link {
+	color: var(--afc-blue);
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.afc-partner-profile__back-link:hover,
+.afc-partner-profile__back-link:focus-visible {
+	color: var(--afc-navy);
+	text-decoration: underline;
+}
+
+.afc-partner-profile__header {
+	background: var(--afc-white);
+	border: 1px solid var(--afc-border);
+	border-radius: 0.75rem;
+	box-shadow: 0 4px 14px rgb(18 59 93 / 8%);
+	display: grid;
+	gap: 1.5rem;
+	padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+@media (min-width: 640px) {
+	.afc-partner-profile__header {
+		grid-template-columns: 10rem 1fr;
+	}
+}
+
+.afc-partner-profile__logo {
+	align-items: center;
+	background: var(--afc-light);
+	border: 1px solid var(--afc-border);
+	border-radius: 0.5rem;
+	display: flex;
+	justify-content: center;
+	min-height: 8rem;
+	padding: 1rem;
+}
+
+.afc-partner-profile__logo img {
+	max-height: 5rem;
+	max-width: 100%;
+	object-fit: contain;
+}
+
+.afc-partner-profile__logo--placeholder {
+	background: linear-gradient(135deg, #e8f1f8 0%, var(--afc-light) 100%);
+}
+
+.afc-partner-profile__logo-initial {
+	align-items: center;
+	background: var(--afc-white);
+	border: 2px solid var(--afc-border);
+	border-radius: 50%;
+	color: var(--afc-navy);
+	display: flex;
+	font-size: 2rem;
+	font-weight: 700;
+	height: 4.5rem;
+	justify-content: center;
+	width: 4.5rem;
+}
+
+.afc-partner-profile__title {
+	color: var(--afc-navy);
+	font-size: clamp(1.75rem, 3vw, 2.25rem);
+	line-height: 1.2;
+	margin: 0 0 0.75rem;
+}
+
+.afc-partner-profile__category-badge {
+	background: var(--afc-light);
+	border: 1px solid var(--afc-border);
+	border-radius: 999px;
+	color: var(--afc-navy);
+	display: inline-block;
+	font-size: 0.75rem;
+	font-weight: 600;
+	letter-spacing: 0.03em;
+	padding: 0.35rem 0.75rem;
+	text-transform: uppercase;
+}
+
+.afc-partner-profile__website-link {
+	background: var(--afc-blue);
+	border-radius: 0.5rem;
+	color: var(--afc-white);
+	display: inline-block;
+	font-weight: 600;
+	margin-top: 1rem;
+	padding: 0.65rem 1.25rem;
+	text-decoration: none;
+}
+
+.afc-partner-profile__website-link:hover {
+	background: #0f7eb3;
+	color: var(--afc-white);
+}
+
+.afc-partner-profile__website-link:focus-visible {
+	box-shadow: 0 0 0 3px #fff, 0 0 0 5px var(--afc-blue);
+	outline: none;
+}
+
+.afc-partner-profile__content {
+	line-height: 1.65;
+	margin-top: 1.5rem;
+}

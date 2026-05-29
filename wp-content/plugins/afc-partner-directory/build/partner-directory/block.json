@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "afc/partner-directory",
+  "version": "0.3.2",
+  "title": "Partner Directory",
+  "category": "widgets",
+  "icon": "groups",
+  "description": "Display AFC partners in a responsive, accessible directory grid.",
+  "keywords": [ "partners", "directory", "afc", "scholarship" ],
+  "textdomain": "afc-partner-directory",
+  "supports": {
+    "html": false,
+    "align": [ "wide", "full" ]
+  },
+  "attributes": {
+    "showHeading": {
+      "type": "boolean",
+      "default": true
+    },
+    "heading": {
+      "type": "string",
+      "default": "Our Scholarship Partners"
+    },
+    "intro": {
+      "type": "string",
+      "default": "Organizations supporting educational opportunity, school choice, and scholarship access across the AFC partner network."
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "render": "file:./render.php"
+}

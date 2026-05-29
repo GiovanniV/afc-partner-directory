@@ -1,0 +1,16 @@
+{
+  "name": "afc-partner-directory",
+  "version": "0.3.2",
+  "description": "AFC Partner Directory Gutenberg block build",
+  "private": true,
+  "scripts": {
+    "build": "wp-scripts build blocks/partner-directory/index.js --output-path=build/partner-directory && npm run copy:block-assets",
+    "copy:block-assets": "cp blocks/partner-directory/block.json blocks/partner-directory/render.php blocks/partner-directory/view.js build/partner-directory/",
+    "start": "wp-scripts start blocks/partner-directory/index.js --output-path=build/partner-directory",
+    "lint:js": "wp-scripts lint-js blocks/partner-directory",
+    "format": "wp-scripts format"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^30.10.0"
+  }
+}

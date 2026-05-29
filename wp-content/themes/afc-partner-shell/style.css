@@ -1,0 +1,37 @@
+/*
+Theme Name: AFC Partner Shell
+Theme URI: https://github.com/GiovanniV/afc-partner-directory
+Description: Minimal application shell theme for the AFC Partner Directory plugin demo. Header and footer are rendered by the plugin.
+Author: AFC
+Version: 1.0.0
+Requires at least: 6.4
+Requires PHP: 8.1
+Text Domain: afc-partner-shell
+*/
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	overflow-x: clip;
+}
+
+img,
+video,
+svg {
+	height: auto;
+	max-width: 100%;
+}
+
+.site-main {
+	margin: 0;
+}
